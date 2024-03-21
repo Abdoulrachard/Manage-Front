@@ -1,24 +1,17 @@
 <script setup>
-import HomeView from "./views/HomeView.vue"
-
+import EmploiComponentVue from "./components/EmploiComponent.vue"
+import FooterComponentVue from "./components/layout/FooterComponent.vue"
+import HeaderComponentVue from "./components/layout/HeaderComponent.vue"
+import SectionIntroComponentVue from "./components/layout/SectionIntroComponent.vue"
 
 </script>
 
 <template>
-  <div id="app" >
-    <HomeView />
-  </div>
+  <HeaderComponentVue/>
+    <SectionIntroComponentVue/>
+    <EmploiComponentVue/>
+  <FooterComponentVue/>
 </template>
-
-<script>
-
-export default {
-  name: 'App',
-  components: {
-    HomeView ,
-  },
-}
-</script>
 
 <style>
 
