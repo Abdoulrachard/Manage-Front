@@ -1,15 +1,11 @@
 <script setup>
-  import router from '@/router';
-  import { useRoute } from 'vue-router';
 
-  const route = useRoute();
-  console.log(route.)
 </script>
 <template>
     <div class="banner jarallax jarallax--video herobanner-embed herobanner-embed--full">
       <div id="jarallax-container-0" class="jarallax-img">
         <iframe
-          :src="video"
+          src="https://www.youtube.com/embed/1_I2HN7NjS0?autoplay=1&amp;mute=1&amp;loop=1&amp;controls=0&amp;modestbranding=1&amp;rel=0"
           frameborder="0"
           allow="autoplay; fullscreen"
           allowfullscreen

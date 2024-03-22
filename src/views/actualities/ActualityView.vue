@@ -1,5 +1,5 @@
 <script setup>
-import actualityDatas from '../../BDD'
+// import actualityDatas from '../../BDD'
 </script>
 
 <template>
@@ -15,8 +15,8 @@ export default {
     }
   },
   mounted() {
-    const uid = this.$route.params.id
-    this.actuality = actualityDatas.filter((elt) => elt.uid == uid)[0]
+    // const uid = this.$route.params.id
+    // this.actuality = actualityDatas.filter((elt) => elt.uid == uid)[0]
   }
 }
 </script>

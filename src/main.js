@@ -1,7 +1,7 @@
 import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
-// import router from './router'
+import router from './router'
 import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
 // import Swiper and modules styles
@@ -13,7 +13,7 @@ import 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.mi
 
 const app = createApp(App)
 
-// app.use(router)
+app.use(router)
 
 app.mount('#app')
 

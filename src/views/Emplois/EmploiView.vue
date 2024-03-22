@@ -1,11 +1,6 @@
-<script>
+<script setup>
 import EmploiComponent from '@/components/EmploiComponent.vue'
-export default {
-  components: { EmploiComponent },
-    setup() {
-        
-    },
-}
+
 </script>
 <template>
     <emploi-component/>

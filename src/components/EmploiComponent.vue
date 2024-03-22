@@ -222,6 +222,7 @@
 .container-two{
     width: 100%;
     margin-bottom: 60px !important;
+    
 }
 
 .marge{
@@ -230,7 +231,7 @@
     margin: 0;
 }
 .card{
-    width: ; height: 30em;
+   height: 30em;
 }
 @media (max-width: 60.5625em) {
     .marge{
@@ -245,13 +246,14 @@
     .container-one {
         padding-left: 24px;
         padding-right: 24px;
+        margin-left: 0;
+     margin-right: 0;
     }
+    
+ 
 }
 
-.container-one , .container-two {
-    width: 100%;
-    max-width: 100%;
-}
+
 .container-two{
     padding: 0;
 }
@@ -270,40 +272,24 @@ h1 {
     max-width: 800px;
     margin-top: 0;
     margin: 1.414em 0 0.5em;
-    font-weight: inherit;
+    font-weight: 700;
     line-height: 1.2;
-    font-size: 2.441em;
+    font-size: 2.1em;
 
 }
 p {
     max-width: 800px;
     margin-top: 0;
     margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 500;
 }
 .container--large {
-    max-width: 1440px;
+    max-width: 1440px
+    
 }
 .container-one a{
     color: black;
 }
-/* swiper-container {
-      width: 100%;
-      height: 100%;
-    }
 
-    swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    } */
 </style>

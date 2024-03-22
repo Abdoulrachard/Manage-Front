@@ -53,12 +53,12 @@ onMounted(() => {
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link   " aria-current="page" href="javascript::void(0)">Actualités</a>
-                <a class="nav-link   " aria-current="page" href="javascript::void(0)">Projets</a>
-                <a class="nav-link   " aria-current="page" href="javascript::void(0)">Équipe</a>
-                <a class="nav-link " aria-current="page" href="javascript::void(0)">À propos</a>
-                <a class="nav-link " aria-current="page" href="javascript::void(0)">Emploi</a>
-                <a class="nav-link " aria-current="page" href="javascript::void(0)">Contact</a>
+                <RouterLink class="nav-link" to="/actualities" >Actualités</RouterLink>
+                <RouterLink class="nav-link" to="/projects">Projets</RouterLink>
+                <RouterLink class="nav-link" to="/equipes">Équipe</RouterLink>
+                <RouterLink class="nav-link" to="/apropos">À propos</RouterLink>
+                <RouterLink class="nav-link" to="/emplois">Emploi</RouterLink>
+                <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
               </li>
             </ul>
             <form class="d-flex mt-3" role="search">
