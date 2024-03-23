@@ -25,6 +25,10 @@ import { useRouter } from 'vue-router';
           return "Projets | Bureau d'architecture | CCHE · CCHE";
         case '/equipes':
           return "Équipe | Bureau d'architecture | CCHE · CCHE";
+        case '/apropos/urbanisme':
+          return "Urbanisme · CCHE";
+          case '/apropos/architecture':
+          return "Architecture · CCHE";
         default:
           return "Bureau d’architecture | Lausanne, Nyon, Genève, la Vallée de Joux, Zürich et Porto | CCHE · CCHE";
       }

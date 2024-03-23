@@ -36,7 +36,7 @@
             </RouterLink>
           </div>
           <div class="grid__item w-1/5">
-            <RouterLink to="javascript::void(0)" class="flex flex-column align-items-center text-dry">
+            <RouterLink to="/apropos/architecture" class="flex flex-column align-items-center text-dry">
               <svg class="icon__large icon--urbanisme sectors-list__icon-large"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M11.98 0z"/>
                 <path fill="transparent" d="M5.09 17.08h4.49v5.74H5.09z"/>

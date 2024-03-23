@@ -733,7 +733,7 @@ import FooterComponent from "./layout/FooterComponent.vue";
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url('./src/assets/image/barner/apropos.jpg') ;
+  background-image: url('../assets/image/barner/apropos.jpg') ;
 }
 
 .navbar-wrapper__cta {

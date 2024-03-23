@@ -4,6 +4,7 @@ import AproposView from '../views/Apropos/AproposView.vue'
 import EmploiView from '../views/Emplois/EmploiView.vue'
 import ContactView from '../views/Contact/ContactView.vue'
 import UrbanismeView from '@/views/Apropos/UrbanismeView.vue'
+import ArchitectureView from '@/views/Apropos/ArchitectureView.vue'
 import NotFoundView from '../views/NotFound/NotFoundView.vue'
 
 const router = createRouter({
@@ -33,6 +34,11 @@ const router = createRouter({
       path: '/apropos/urbanisme',
       name: 'urbanisme',
       component: UrbanismeView
+    },
+    {
+      path: '/apropos/architecture',
+      name: 'architecture',
+      component: ArchitectureView
     },
     {
       path: '/:pathMatch(.*)',
