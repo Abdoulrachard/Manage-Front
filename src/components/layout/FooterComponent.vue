@@ -5,9 +5,9 @@
   <footer class="container d-flex">
     <div class="footer_links">
       <ul class="links">
-        <li><a href="javascript::void(0)">À propos</a></li>
-        <li><a href="javascript::void(0)">Emploi</a></li>
-        <li><a href="javascript::void(0)">Contact</a></li>
+        <li><RouterLink to="/apropos">À propos</RouterLink></li>
+        <li><RouterLink to="/emplois">Emploi</RouterLink></li>
+        <li><RouterLink to="/contact">Contact</RouterLink></li>
       </ul>
       <ul class="social d-flex">
         <li><a href="javascript::void(0)"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a></li>

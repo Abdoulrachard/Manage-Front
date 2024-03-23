@@ -1,5 +1,5 @@
 <script setup>
-import AproposComponent from '@/components/layout/AproposComponent.vue'
+import AproposComponent from '@/components/AproposComponent.vue'
 
 </script>
 <template>

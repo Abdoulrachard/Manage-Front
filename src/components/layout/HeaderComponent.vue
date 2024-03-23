@@ -1,6 +1,6 @@
 <script setup>
 // import { onMounted } from 'vue';
-import VideoBarnerComponent from './VideoBarnerComponent.vue';
+// import VideoBarnerComponent from './VideoBarnerComponent.vue';
 
 // onMounted(() => {
 
@@ -69,7 +69,7 @@ import VideoBarnerComponent from './VideoBarnerComponent.vue';
         </div>
       </div>
     </nav>
-    <VideoBarnerComponent />
+    <!-- <VideoBarnerComponent /> -->
   </header>
 </template>
 

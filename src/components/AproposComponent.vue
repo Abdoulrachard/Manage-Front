@@ -1,7 +1,26 @@
 <script setup>
-
+ import HeaderComponent from "./layout/HeaderComponent.vue";
+    // import BarnerComponent from "./layout/BarnerComponent.vue" 
+import FooterComponent from "./layout/FooterComponent.vue";
+   
 </script>
 <template>
+    <HeaderComponent />
+    <section>
+        <div class="section">
+            <div class="banner herobanner-embed herobanner-embed--full">
+                <div class="banner-content">
+                    <div class="banner-image"></div>
+                    <a href="#content-section" class="navbar-wrapper__cta">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="#ffffff"
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="propos">
         <div class="container">
             <div class="container container--tight block">
@@ -51,7 +70,7 @@
                 <div class="col-sm-6 col-md-6">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/cche-formation-lunchandlearn.jpg"
+                            <img src="../assets/image/img/cche-formation-lunchandlearn.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                     </div>
@@ -59,8 +78,8 @@
                 <div class="col-sm-6 col-md-6">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/CCHE-a-propos-metiers.jpg"
-                                alt="cche-formation-lunchandlearn" class="embed-responsive__item">
+                            <img src="../assets/image/img/CCHE-a-propos-metiers.jpg" alt="cche-formation-lunchandlearn"
+                                class="embed-responsive__item">
                         </div>
                     </div>
                 </div>
@@ -72,14 +91,16 @@
                     <a name="echelles" class="anchor" tabindex="-1"></a>
                     <h2 class="block__title">ÉCHELLES</h2>
                     <div class="block__description">
-                        <p data-block-key="pm50s"><a href="/fr/a-propos/urbanisme/">Urbanisme</a> - <a
-                                href="/fr/a-propos/architecture/">Architecture</a> - <a
-                                href="/fr/a-propos/architecture-d-interieur/">Intérieur</a> - <a
-                                href="/fr/a-propos/design/">Design</a> - <a
-                                href="/fr/a-propos/realisation/">Réalisation</a><br><br>Nous réunissons sous le même
+                        <p data-block-key="pm50s">
+                            <RouterLink to="/apropos/urbanisme">Urbanisme</RouterLink> - <RouterLink
+                                to="/apropos/architecture/">Architecture</RouterLink> - <RouterLink
+                                to="/apropos/architecture-d-interieur/">Intérieur</RouterLink> - <RouterLink
+                                to="/apropos/design/">Design</RouterLink> - <RouterLink to="/apropos/realisation">
+                                Réalisation</RouterLink><br><br>Nous réunissons sous le même
                             toit toutes les compétences de l'architecture avec des équipes passionnées, dynamiques et
                             créatives afin de proposer un savoir-faire de grande qualité et une réflexion globale,
-                            quelle que soit l’échelle du projet.</p>
+                            quelle que soit l’échelle du projet.
+                        </p>
                         <p data-block-key="fgz3l">Qu’il s’agisse de la rénovation d’un ouvrage protégé à l’inventaire
                             historique, du développement d’un grand quartier de logements ou de la réalisation d’un
                             musée de haute horlogerie, les projets signés CCHE se distinguent par une vision à la fois
@@ -93,7 +114,7 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/CCHE-TOUR-HIAG-vue-generale.jpg"
+                            <img src="../assets/image/img/CCHE-TOUR-HIAG-vue-generale.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                         <div class="block__label" style="padding-top: 1rem;">
@@ -113,7 +134,7 @@
                 <div class="col-sm-4 col-md-4">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/cche-echelles-a-propos-01.jpg"
+                            <img src="../assets/image/img/cche-echelles-a-propos-01.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                         <div class="block__label" style="padding-top: 1rem;">
@@ -126,7 +147,7 @@
                 <div class="col-sm-4 col-md-4">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/cche-echelles-a-propos-02.jpg"
+                            <img src="../assets/image/img/cche-echelles-a-propos-02.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                         <div class="block__label" style="padding-top: 1rem;">
@@ -138,7 +159,7 @@
                 <div class="col-sm-4 col-md-4">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/cche-architecture-pallin-panchaude-05.jpg"
+                            <img src="../assets/image/img/cche-architecture-pallin-panchaude-05.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                         <div class="block__label" style="padding-top: 1rem;">
@@ -154,7 +175,7 @@
                 <div class="col-sm-6 col-md-4">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/CCHE-musee_audemars_piguet-24heures_v3.jpg"
+                            <img src="../assets/image/img/CCHE-musee_audemars_piguet-24heures_v3.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                         <div class="block__label" style="padding-top: 1rem;">
@@ -169,7 +190,7 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/cche-architecture-parallele-I-et-II-01.jpg"
+                            <img src="../assets/image/img/cche-architecture-parallele-I-et-II-01.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                         <div class="block__label" style="padding-top: 1rem;">
@@ -214,8 +235,8 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/CCHE-seance-interieur.jpg"
-                                alt="cche-formation-lunchandlearn" class="embed-responsive__item">
+                            <img src="../assets/image/img/CCHE-seance-interieur.jpg" alt="cche-formation-lunchandlearn"
+                                class="embed-responsive__item">
                         </div>
                         <div class="block__label" style="padding-top: 1rem;">
                             <p data-block-key="4tiwv">Du développement d'une idée à la réalisation d'un bâtiment, chaque
@@ -227,19 +248,19 @@
                 <div class="col-sm-6 col-md-4">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/CCHE-a-propos-metiers-construction.jpg"
+                            <img src="../assets/image/img/CCHE-a-propos-metiers-construction.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                     </div>
                     <div class="block__item" style="padding-top: 1rem;">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/CCHE-drone.jpg" alt="cche-formation-lunchandlearn"
+                            <img src="../assets/image/img/CCHE-drone.jpg" alt="cche-formation-lunchandlearn"
                                 class="embed-responsive__item">
                         </div>
                     </div>
                     <div class="block__item" style="padding-top: 1rem;">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/cche_metiers-infographiste_ofQrExM.jpg"
+                            <img src="../assets/image/img/cche_metiers-infographiste_ofQrExM.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                     </div>
@@ -328,7 +349,7 @@
                 <div class="col-sm-6 col-md-4">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/cche_innovation_VR.jpg" alt="cche-formation-lunchandlearn"
+                            <img src="../assets/image/img/cche_innovation_VR.jpg" alt="cche-formation-lunchandlearn"
                                 class="embed-responsive__item">
                         </div>
                     </div>
@@ -356,8 +377,8 @@
                 <div class="col-sm-4 col-md-4">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/1515_APM_BIM_LV_180201.jpg"
-                                alt="cche-formation-lunchandlearn" class="embed-responsive__item">
+                            <img src="../assets/image/img/1515_APM_BIM_LV_180201.jpg" alt="cche-formation-lunchandlearn"
+                                class="embed-responsive__item">
                         </div>
                     </div>
                 </div>
@@ -374,7 +395,7 @@
                 <div class="col-sm-4 col-md-4">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/CCHE-a-propos-bim-musee-atelier-le-brassus_sfDpDaw.jpg"
+                            <img src="../assets/image/img/CCHE-a-propos-bim-musee-atelier-le-brassus_sfDpDaw.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                     </div>
@@ -421,7 +442,7 @@
                 <div class="col-sm-6 col-md-6">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/CCHE-College-de-l-Elysee_CGSrMdK.jpg"
+                            <img src="../assets/image/img/CCHE-College-de-l-Elysee_CGSrMdK.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                         <div class="block__label">
@@ -434,7 +455,7 @@
                 <div class="col-sm-6 col-md-6">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/cche-architecture-interieur-incyte-biosciences.international-003.jpg"
+                            <img src="../assets/image/img/cche-architecture-interieur-incyte-biosciences.international-003.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                         <div class="block__label">
@@ -475,7 +496,7 @@
                 <div class="col-sm-6 col-md-4">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/CCHE_Entreprise-formatrice-CFC.jpg"
+                            <img src="../assets/image/img/CCHE_Entreprise-formatrice-CFC.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                         <div class="block__label">
@@ -486,7 +507,7 @@
                     </div>
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/cche-a-propos-expertise-la-formation-a-tous-les-niveaux-002.jpg"
+                            <img src="../assets/image/img/cche-a-propos-expertise-la-formation-a-tous-les-niveaux-002.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                         <div class="block__label">
@@ -515,7 +536,7 @@
                 <div class="col-sm-6 col-md-6">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/CCHE-a-propos-developpement-durable-certifications.jpg"
+                            <img src="../assets/image/img/CCHE-a-propos-developpement-durable-certifications.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                         <div class="block__label">
@@ -527,7 +548,7 @@
                 <div class="col-sm-6 col-md-6">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/CCHE-a-propos-developpement-durable-certifications-002_6Muf6Rg.jpg"
+                            <img src="../assets/image/img/CCHE-a-propos-developpement-durable-certifications-002_6Muf6Rg.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                     </div>
@@ -560,7 +581,7 @@
                 <div class="col-sm-12 col-md-12">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/2400005F-0AF8-40A0-B0B8-EEAF2FB93884.jpg"
+                            <img src="../assets/image/img/2400005F-0AF8-40A0-B0B8-EEAF2FB93884.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                         <div class="block__label">
@@ -591,11 +612,10 @@
                             piloté par 7 associés complémentaires apportant leur propre sensibilité, leur expérience et
                             leurs compétences au service des projets. <a href="javascript::void(0)">Hannes
                                 Ehrensperger</a>, <a href="javascript::void(0)">Marco Cennini</a>, <a
-                                href="javascript::void(0)">Marc Fischer</a>, <a
-                                href="javascript::void(0)">Daniel Grosso</a>, <a
-                                href="javascript::void(0)">Franziska Lakomski</a>, <a
-                                href="javascript::void(0)">Victoria Stoddart</a> et <a
-                                href="javascript::void(0)">Eric Mathez</a> ont une volonté unanime de répondre de
+                                href="javascript::void(0)">Marc Fischer</a>, <a href="javascript::void(0)">Daniel
+                                Grosso</a>, <a href="javascript::void(0)">Franziska Lakomski</a>, <a
+                                href="javascript::void(0)">Victoria Stoddart</a> et <a href="javascript::void(0)">Eric
+                                Mathez</a> ont une volonté unanime de répondre de
                             façon toujours plus adaptée et personnalisée aux demandes de leurs clients, et donnent jour
                             à des réalisations toutes échelles confondues, se déclinant du quartier à l’objet, avec
                             comme pensée commune, l’Architecture.<br><br>Dans le but de se rapprocher géographiquement
@@ -633,7 +653,7 @@
                 <div class="col-sm-6 col-md-8">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/cche-architecte-associee-marie-stahl-004.jpg"
+                            <img src="../assets/image/img/cche-architecte-associee-marie-stahl-004.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
                         <div class="block__label">
@@ -646,8 +666,8 @@
                 <div class="col-sm-6 col-md-4">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/seance-associes-zoom.jpg"
-                                alt="cche-formation-lunchandlearn" class="embed-responsive__item">
+                            <img src="../assets/image/img/seance-associes-zoom.jpg" alt="cche-formation-lunchandlearn"
+                                class="embed-responsive__item">
                         </div>
                         <div class="block__label">
                             <p data-block-key="kl3vg">L'utilisation de la visioconférence pour les échanges et
@@ -664,8 +684,8 @@
                     <div class="block__description">
                         <h4 data-block-key="595tx">Perspectives Construction SA</h4>
                         <p data-block-key="08n6a">Dernière née de la famille CCHE, partageant ses locaux avec CCHE Nyon
-                            SA, l’entité <a href="javascript::void(0)" target="_blank"
-                                rel="noopener">Perspectives Construction SA</a>, s’inscrit dans cette évolution et
+                            SA, l’entité <a href="javascript::void(0)" target="_blank" rel="noopener">Perspectives
+                                Construction SA</a>, s’inscrit dans cette évolution et
                             propose pour ses projets, de la conception à la livraison une réalisation clé en mains, à
                             des prix et des délais garantis sous la forme de contrats en entreprise générale et/ou
                             totale.</p>
@@ -678,17 +698,76 @@
                 <div class="col-sm-12 col-md-12">
                     <div class="block__item">
                         <div class="responsive-object  embed-responsive-16by9">
-                            <img src="../../assets/image/img/cche-architecture-malley-phare-00_yRYbtEl.jpg"
+                            <img src="../assets/image/img/cche-architecture-malley-phare-00_yRYbtEl.jpg"
                                 alt="cche-formation-lunchandlearn" class="embed-responsive__item">
                         </div>
-                        <div class="block__label"><p data-block-key="alh6d"><a href="javascript::void(0)">Malley Phare</a>, projet qui sera réalisé par Perspectives Construction</p></div>
+                        <div class="block__label">
+                            <p data-block-key="alh6d"><a href="javascript::void(0)">Malley Phare</a>, projet qui sera
+                                réalisé par Perspectives Construction</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <FooterComponent />
 </template>
 <style scoped>
+.banner {
+  position: relative;
+  overflow: hidden;
+  height: 70vh;
+}
+
+.banner-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url('./src/assets/image/barner/apropos.jpg') ;
+}
+
+.navbar-wrapper__cta {
+  display: flex;
+  width: 28px;
+  height: 80px;
+  align-items: center;
+  border-bottom-width: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+  color: #fff;
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+@media (max-width: 60.5625em) {
+  .banner {
+    height: 50vh;
+  }
+}
 a {
 border-bottom: 1px solid #8d8d8d;
     transition: border-bottom-color .3s ease-in;
@@ -725,6 +804,11 @@ p {
 }
 .block {
     padding-bottom: 72px;
+}
+@media (max-width: 60.5625em){
+    .block {
+    padding-bottom: 30px;
+}
 }
 .container--tight {
     padding-left: 0;
@@ -788,4 +872,23 @@ h4 {
     line-height: 1.2;
 }
 
+@media (max-width: 767px) {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .block {
+        padding-bottom: 30px;
+    }
+    .row{
+        gap: 10px ;
+    }
+    .block__label{
+    margin-top: .2rem;
+    
+}
+}
+
 </style>
+

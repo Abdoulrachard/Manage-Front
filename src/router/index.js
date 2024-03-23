@@ -3,6 +3,8 @@ import HomeView from '../views/Home/HomeView.vue'
 import AproposView from '../views/Apropos/AproposView.vue'
 import EmploiView from '../views/Emplois/EmploiView.vue'
 import ContactView from '../views/Contact/ContactView.vue'
+import UrbanismeView from '@/views/Apropos/UrbanismeView.vue'
+import NotFoundView from '../views/NotFound/NotFoundView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,7 +28,17 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: ContactView
-    }
+    },
+    {
+      path: '/apropos/urbanisme',
+      name: 'urbanisme',
+      component: UrbanismeView
+    },
+    {
+      path: '/:pathMatch(.*)',
+      name: 'NotFound',
+      component: NotFoundView
+    },
   ]
 })
 

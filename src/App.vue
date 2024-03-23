@@ -1,7 +1,7 @@
 <script setup>
+import HeaderComponentVue from "@/components/layout/HeaderComponent.vue";
+import FooterComponentVue from "@/components/layout/FooterComponent.vue";
 
-import FooterComponentVue from "./components/layout/FooterComponent.vue"
-import HeaderComponentVue from "./components/layout/HeaderComponent.vue"
 import { onMounted, watch } from 'vue';
 import { useRouter } from 'vue-router';
     const router = useRouter();
@@ -33,16 +33,22 @@ import { useRouter } from 'vue-router';
     onMounted(() => {
       document.title = getTitleFromRoute(router.currentRoute.value);
     });
+    const route = useRouter();
 
+const isHomePage = () => {
+  return route.currentRoute.value.path === '/';
+}
 
 
 
 </script>
 
 <template>
-  <HeaderComponentVue/>
-  <RouterView />
-  <FooterComponentVue/>
+  <div>
+    <HeaderComponentVue v-if="!isHomePage"/>
+    <RouterView />
+    <FooterComponentVue v-if="!isHomePage"/>
+  </div>
 </template>
 
 <style>
