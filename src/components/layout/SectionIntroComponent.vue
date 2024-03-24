@@ -47,7 +47,7 @@
             </RouterLink>
           </div>
           <div class="grid__item w-1/5">
-            <RouterLink to="javascript::void(0)" class="flex flex-column align-items-center text-dry">
+            <RouterLink to="/apropos/interieur" class="flex flex-column align-items-center text-dry">
               <svg class="icon__large icon--urbanisme sectors-list__icon-large" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M19.6 0v24H4.24V0Zm-1.26 1.17H5.5v21.66h9.56l-7.27-2V3.52L18.34 1.2Zm0 1.24-9.29 2V20l9.29 2.55Zm-8.24 8.52h2.72v1.18H10.1Z"/>
               </svg>
@@ -55,7 +55,7 @@
             </RouterLink>
           </div>
           <div class="grid__item w-1/5">
-            <RouterLink to="javascript::void(0)" class="flex flex-column align-items-center text-dry">
+            <RouterLink to="/apropos/design" class="flex flex-column align-items-center text-dry">
               <svg class="icon__large icon--urbanisme sectors-list__icon-large" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M3 0v24h11.46v-9.2h8.7V9.2h-8.7V0Zm1.29 1.19h8.88v8H6.6v5.61h6.57v8H4.29Zm3.59 9.2h14v3.22h-14Z"/>
               </svg>
@@ -63,7 +63,7 @@
             </RouterLink>
           </div>
           <div class="grid__item w-1/5">
-            <RouterLink to="javascript::void(0)" class="flex flex-column align-items-center text-dry">
+            <RouterLink to="/apropos/realisation" class="flex flex-column align-items-center text-dry">
               <svg class="icon__large icon--urbanisme sectors-list__icon-large" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path fill="transparent" d="M14.9 8.89V5.66H1.25v3.23H14.9zM7.92 10.08H1.25v3.12h6.67v-3.12zM9.08 1.19h13.66v3.23H9.08zM16.15 5.66h6.59V8.9h-6.59zM1.25 14.39v8.4h21.49v-8.4H1.25zM14.9 10.08H9.17v3.12h13.57v-3.11H14.9v-.01z"/>
                 <path d="M7.82 0v4.46H0V24h24V0Zm1.26 1.19h13.66v3.23H9.08Zm13.66 4.47V8.9h-6.59V5.66Zm-21.49 0H14.9v3.23H1.25Zm0 4.42h6.67v3.12H1.25Zm21.49 12.71H1.25v-8.4h21.49Zm0-9.59H9.17v-3.12h13.57Z"/>
