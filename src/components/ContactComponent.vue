@@ -207,7 +207,7 @@ import FooterComponent from "./layout/FooterComponent.vue";
 .banner {
   position: relative;
   overflow: hidden;
-  height: 70vh;
+  height: 80vh;
 }
 
 .banner-content {
