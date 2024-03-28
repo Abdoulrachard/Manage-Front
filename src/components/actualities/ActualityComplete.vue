@@ -20,7 +20,6 @@ import constants from '@/constants';
 export default {
   data() {
     return {
-      max_actualities: 19,
       actualities: [],
       totalCols: 4,
       totalRows: 1
@@ -40,13 +39,13 @@ export default {
     }
   },
   mounted() {
-    
+
     axios.get(`${constants.BASE_URL}/actuality`)
       .then(response => {
 
         const data = response.data.data;
         if (data) {
-          this.actualities = data.slice(0, this.max_actualities);
+          this.actualities = data;
         }
         this.totalRows = Math.ceil(this.actualities.length / this.totalCols);
 

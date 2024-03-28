@@ -9,6 +9,8 @@ import InterieurView from '@/views/Apropos/InterieurView.vue'
 import DesignView from '@/views/Apropos/DesignView.vue'
 import RealView from '@/views/Apropos/RealView.vue'
 import NotFoundView from '../views/NotFound/NotFoundView.vue'
+import ActualitiesView from '../views/actualities/ActualitiesViews.vue'
+import ActualitiesShowView from '../views/actualities//ActualitiesShowView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,6 +19,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
+    },
+    {
+      path: '/actualities',
+      name: 'actualities',
+      component: ActualitiesView
     },
     {
       path: '/apropos',
@@ -57,6 +64,11 @@ const router = createRouter({
       path: '/apropos/realisation',
       name: 'realisation',
       component: RealView
+    },
+    {
+      path: '/actuality/:id',
+      name: 'actuality.show',
+      component: ActualitiesShowView
     },
     {
       path: '/:pathMatch(.*)',

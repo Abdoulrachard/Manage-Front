@@ -1,12 +1,8 @@
 <script setup>
 
-import HeaderComponent from "./layout/HeaderComponent.vue";
-    // import BarnerComponent from "./layout/BarnerComponent.vue" 
-import FooterComponent from "./layout/FooterComponent.vue";
 
 </script>
 <template>
-<HeaderComponent/>
 <section>
         <div class="section">
             <div class="banner herobanner-embed herobanner-embed--full">
@@ -204,7 +200,7 @@ import FooterComponent from "./layout/FooterComponent.vue";
             </div>
         </div>
     </div>
-<FooterComponent/>
+
 </template>
 
 <style scoped>

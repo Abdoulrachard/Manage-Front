@@ -45,7 +45,7 @@ import { useRouter } from 'vue-router';
     });
     const route = useRouter();
 
-const isHomePage = () => {
+  const isHomePage = () => {
   return route.currentRoute.value.path === '/';
 }
 
@@ -55,9 +55,9 @@ const isHomePage = () => {
 
 <template>
   <div>
-    <HeaderComponentVue v-if="!isHomePage"/>
-    <RouterView />
-    <FooterComponentVue v-if="!isHomePage"/>
+    <HeaderComponentVue v-if="isHomePage"/>
+    <RouterView/>
+    <FooterComponentVue v-if="isHomePage"/>
   </div>
 </template>
 

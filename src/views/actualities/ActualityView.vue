@@ -1,22 +1,18 @@
 <script setup>
-// import actualityDatas from '../../BDD'
+  import ActualityRow from '@/components/actualities/ActualityRow.vue';
+  import ArrowRight from '@/components/layout/ArrowRight.vue';
 </script>
 
 <template>
-  <h1>{{ actuality.title }}</h1>
-  <img :src="actuality.image" alt="">
+  <div>
+    <ActualityRow/>
+  </div>
+  <div>
+    <ArrowRight/>
+  </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      actuality: {}
-    }
-  },
-  mounted() {
-    // const uid = this.$route.params.id
-    // this.actuality = actualityDatas.filter((elt) => elt.uid == uid)[0]
-  }
-}
-</script>
+<style>
+
+
+</style>

@@ -1,55 +1,63 @@
-<!-- <script setup>
-defineProps({
-  data: Object
-})
+<script setup>
+  import constants from '@/constants';
 </script>
 <template>
   <RouterLink
-    class="linkCard"
-    :to="{ name: 'actuality', params: { title: $urlify(data?.title), id: data?.uid } }"
-  >
-    <div class="card border-0 rounded-0 bg-custom mb-3" style="">
-      <img :src="data?.image" class="card-img-top rounded-0 zoom-on-hover" :alt="data?.imageAlt" />
+    class="linkCard" :to="{ name: 'actuality.show', params: { id: data.id }}">
+    <div class="card border-0 rounded-0 bg-custom ">
+      <img :src="`${constants.STORAGE_URL}/actualities/covers/${ data?.cover_path }`" class="card-img-top rounded-0 zoom-on-hover" :alt="data?.title" />
       <div class="card-body card-info">
-        <p class="fw-bold categories">{{ data?.categories }}</p>
-        <p class="date">{{ data?.date }}</p>
+        <p class=" categories">{{ data?.category.name }}</p>
+        <p class="date">{{ data?.created_at}}</p>
         <h4 class="card-title title">{{ data?.title }}</h4>
-        <p class="card-text text">{{ data?.content }}</p>
-
+        <p  class="card-text text" v-html=" data?.description "></p>
       </div>
     </div>
   </RouterLink>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    data: Object
+  }
+};
 </script>
+
 <style>
 .bg-custom {
   background-color: #f5f5f5 !important ;
+  margin-bottom: 10px !important;
 }
 .card-info {
-  padding: 14px 14px 35px;
+    padding: 14px 14px 25px;
+    position: relative;
+    background-color: #f5f5f5;
 }
 .categories {
-  margin-bottom: 7px;
+    margin-bottom: 7px;
+    font-weight: 600;
 }
 .title {
-  margin-bottom: 14px !important;
-  margin-top: 0;
-  font-size: 1.3rem;
-  line-height: 1.3;
-  font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 1.2222222222rem;
+    font-weight: bold;
 }
 
 .date {
-  color: #606060;
-  font-size: 0.88rem;
+    color: #606060;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: .888888rem;
+    font-weight: 500;
+    
+
 }
 .text {
-  margin-bottom: 14px;
-  margin-top: 0;
-  font-weight: 500;
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 500;
 }
 .linkCard {
   text-decoration: none;
@@ -71,4 +79,4 @@ export default {}
 .card-img-top {
   transition: transform 0.3s ease;
 }
-</style> -->
+</style>

@@ -17,9 +17,6 @@ app.use(router)
 
 app.mount('#app')
 
-const sanitize = (text) => {
-  return text.replace(/<[^>]*>/g, '').replace(/&(nbsp|#160|ensp|emsp|thinsp);/g, ' ')
-}
 
 new Swiper('.swiper', {
   // configure Swiper to use modules
@@ -31,24 +28,24 @@ new Swiper('.swiper', {
   },
 
 });
-
-/**
- * Convertit une chaîne de caractères en un format valide pour une URL.
- *
- * @param {string} title - La chaîne de caractères à convertir.
- * @returns {string} La chaîne de caractères convertie.
- */
-const urlify = (title) => {
-  const sanitizedTitle = typeof title === 'string' ? title : ''
-  const urlifiedTitle = sanitizedTitle
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^\w\s-]/g, '')
-    .replace(/[\s]+/g, '-')
-    .toLowerCase()
-
-  return urlifiedTitle
+function toggleNavbarVisibility(){
+  let lastScrollTop = 0;
+  const navbarHeight = 90; // Hauteur de votre barre de navigation
+  const offsetThreshold = 30; // Seuil de défilement pour réapparition de la barre de navigation
+  
+  window.addEventListener("scroll", function() {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  
+    if (currentScroll > lastScrollTop && currentScroll > navbarHeight + offsetThreshold) {
+      // Scroll vers le bas
+      document.querySelector("nav").style.top = `-${navbarHeight}px`;
+    } else if (currentScroll < lastScrollTop && currentScroll < navbarHeight - offsetThreshold) {
+      // Scroll vers le haut
+      document.querySelector("nav").style.top = "0";
+    }
+  
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Pour gérer le comportement sur les navigateurs mobiles
+  });
 }
+ toggleNavbarVisibility()
 
-app.config.globalProperties.$urlify = urlify;
-app.config.globalProperties.$sanitize = sanitize;

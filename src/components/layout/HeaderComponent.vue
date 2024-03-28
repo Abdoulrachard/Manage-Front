@@ -1,28 +1,6 @@
 <script setup>
-// import { onMounted } from 'vue';
-// import VideoBarnerComponent from './VideoBarnerComponent.vue';
 
-// onMounted(() => {
 
-//   const ratio = 0.5;
-//   const options = {
-//     'root': null,
-//     'rootMargin': '0px',
-//     'threshold': ratio
-//   }
-//   const header = document.querySelector('.header');
-//   const banner = document.querySelector('.banner');
-//   const callback = (entries, observer) => {
-//     if (entries[0].intersectionRatio >= ratio) {
-//       header.classList.remove('fixed-top');
-//       observer.unobserve(banner)
-//     } else header.classList.add('fixed-top');
-
-//   }
-//   const observer = new IntersectionObserver(callback, options)
-//   observer.observe(banner)
-
-// })
 </script>
 <template>
   <header>
