@@ -10,7 +10,9 @@ import DesignView from '@/views/Apropos/DesignView.vue'
 import RealView from '@/views/Apropos/RealView.vue'
 import NotFoundView from '../views/NotFound/NotFoundView.vue'
 import ActualitiesView from '../views/actualities/ActualitiesViews.vue'
-import ActualitiesShowView from '../views/actualities//ActualitiesShowView.vue'
+import ActualitiesShowView from '../views/actualities/ActualitiesShowView.vue'
+import ProjectsShowView from '../views/projects/ProjectsShowView.vue'
+import ProjectsView from '../views/projects/ProjectsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,6 +26,11 @@ const router = createRouter({
       path: '/actualities',
       name: 'actualities',
       component: ActualitiesView
+    },
+    {
+      path: '/projects',
+      name: 'projects',
+      component: ProjectsView
     },
     {
       path: '/apropos',
@@ -69,6 +76,11 @@ const router = createRouter({
       path: '/actuality/:id',
       name: 'actuality.show',
       component: ActualitiesShowView
+    },
+    {
+      path: '/project/:id',
+      name: 'project.show',
+      component: ProjectsShowView
     },
     {
       path: '/:pathMatch(.*)',

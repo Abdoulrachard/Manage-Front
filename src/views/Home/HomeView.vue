@@ -1,13 +1,13 @@
 <script setup>
 import SectionIntroComponent from '@/components/layout/SectionIntroComponent.vue'
 import ActualityView from '../Actualities/ActualityView.vue';
+import ProjectView from '../projects/ProjectView.vue';
 
 </script>
 <template>
     <section-intro-component/>
     <actuality-view/>
-    <div class="container pdgt pdgb++">
-  </div>
+    <ProjectView/>
 </template>
 <style scoped>
 

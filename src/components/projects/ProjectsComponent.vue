@@ -1,12 +1,12 @@
 <script setup>
-import ActualityComplete from '@/components/actualities/ActualityComplete.vue';
+import ProjectComplete from './ProjectComplete.vue';
 
    
 </script>
 <template>
     <div class="container">
         <div class="okay">
-            <h3 class="mrg0">Actualités</h3>
+            <h3 class="mrg0">Projets</h3>
             <button aria-controls="#collapsible-content-cche-articles-strainer"
                 class="text-normal btn btn--default btn--rounded btn--small">
                 Filtrer <i class="fa fa-chevron-down"></i>
@@ -15,7 +15,7 @@ import ActualityComplete from '@/components/actualities/ActualityComplete.vue';
 
     </div>
     <div>
-        <ActualityComplete />
+        <ProjectComplete />
     </div>
 </template>
 <style scoped>

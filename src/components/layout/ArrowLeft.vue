@@ -3,7 +3,7 @@
 </script>
 <template>
     <div class="container">
-        <RouterLink to="/actualities" class="text-dry d-flex flex-column align-items-center pdgb">
+        <RouterLink to="/projects" class="text-dry d-flex flex-column align-items-center pdgb">
                 <span class="text-bold">Voir plus</span>
                 <span><i class="fas fa-arrow-right"></i></span>
         </RouterLink>

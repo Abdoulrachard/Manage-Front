@@ -24,7 +24,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .bg-custom {
   background-color: #f5f5f5 !important ;
   margin-bottom: 10px !important;
@@ -77,6 +77,6 @@ export default {
 }
 
 .card-img-top {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease !important;
 }
 </style>

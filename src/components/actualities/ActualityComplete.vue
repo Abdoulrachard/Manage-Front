@@ -57,7 +57,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .masonry {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

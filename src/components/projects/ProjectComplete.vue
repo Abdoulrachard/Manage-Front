@@ -1,5 +1,5 @@
 <script setup>
-import ActualityCard from './ActualityCard.vue'
+import ProjectCard from './ProjectCard.vue'
 import axios from 'axios';
 import constants from '@/constants';
 </script>
@@ -9,7 +9,7 @@ import constants from '@/constants';
     <div class="row masonry">
       <div class="col col-margin" v-for="t in totalCols" :key="t">
         <div v-for="(card, k) in getUniqueCards(t)" :key="k">
-          <ActualityCard :data="card" />
+          <ProjectCard :data="card" />
         </div>
       </div>
     </div>
@@ -20,8 +20,7 @@ import constants from '@/constants';
 export default {
   data() {
     return {
-      max_actualities: 19,
-      actualities: [],
+      projects: [],
       totalCols: 4,
       totalRows: 1
     }
@@ -32,8 +31,8 @@ export default {
       const limit = col * this.totalRows;
       const cardsInColumn = [];
 
-      for (let i = offset; i < Math.min(limit, this.actualities.length); i++) {
-        cardsInColumn.push(this.actualities[i]);
+      for (let i = offset; i < Math.min(limit, this.projects.length); i++) {
+        cardsInColumn.push(this.projects[i]);
       }
 
       return cardsInColumn;
@@ -41,14 +40,14 @@ export default {
   },
   mounted() {
     
-    axios.get(`${constants.BASE_URL}/actuality`)
+    axios.get(`${constants.BASE_URL}/project`)
       .then(response => {
 
         const data = response.data.data;
         if (data) {
-          this.actualities = data.slice(0, this.max_actualities);
+          this.projects = data;
         }
-        this.totalRows = Math.ceil(this.actualities.length / this.totalCols);
+        this.totalRows = Math.ceil(this.projects.length / this.totalCols);
 
       })
       .catch(response => console.error(response.data))
@@ -66,9 +65,18 @@ export default {
 .col-margin{
   padding-left: 6px;
   padding-right: 6px;
+  height: auto;
 }
 .container-fluidy {
   margin: 2% !important;
   overflow: hidden;
 }
+
+@media (max-width: 767px) {
+.masonry {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  row-gap: 10px !important;
+}
+}
+
 </style>
