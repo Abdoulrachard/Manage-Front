@@ -6,13 +6,19 @@ import constants from "@/constants"
 
 <template>
     
-    <RouterLink :to="{ name: 'project.show', params: { id: data.id }}" class="linkCard">
-        <div class="card border-0 rounded-0 bg-custom zoom-on-hover">
+    <RouterLink :to="{ name: 'equipe.show', params: { id: data.id }}" class="linkCard">
+        <div class="card border-0 rounded-0 bg-custom ">
             <div class="responsive position-relative">
-                <img :src="`${constants.STORAGE_URL}/projects/covers/${data?.cover}`"
-                    class="rounded-0 responsive" :alt="data?.title" />
-                <div class="title-overlay">
-                    <h5 class="tile__title line-clamp-2">{{ data?.project_name }}</h5>
+                <img :src="`${constants.STORAGE_URL}/equipes/covers/${data?.cover}`"
+                    class="rounded-0 responsive zoom-on-hover" :alt="data?.name" />
+                <div class="title-overlay d-flex justify-content-between align-items-end">
+                    <div>
+                        <h5 class="tile__title line-clamp-2">{{ data?.name }}</h5>
+                        <p class="tile__description">{{ data?.posted }}</p>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-plus"></i>
+                    </div>
                 </div>
                 <div class="tile__gradient"></div>
             </div>
@@ -46,21 +52,19 @@ export default {
 .card {
     position: relative;
     overflow: hidden ;
-    transition: transform 0.3s ease;
-    max-height: 250px; 
     margin-bottom: 12px !important;
-
 }
 
 .responsive {
     position: relative;
-    max-height: 250px
+    transition: transform 0.3s ease; 
 }
 
 .responsive img {
     width: 100%;
     height: 100%;
     object-fit: cover; 
+    
 }
 
 .title-overlay {
@@ -113,5 +117,31 @@ h5 {
     z-index: 100;
     background-image: linear-gradient(to top, hsla(56.67deg, 9.09%, 38.82%, 0.12) 0%, hsla(56.67deg, 9.09%, 38.82%, 0.113) 5.3%, hsla(56.67deg, 9.09%, 38.82%, 0.105) 11%, hsla(56.67deg, 9.09%, 38.82%, 0.096) 16.8%, hsla(56.67deg, 9.09%, 38.82%, 0.086) 22.9%, hsla(56.67deg, 9.09%, 38.82%, 0.076) 29.3%, hsla(56.67deg, 9.09%, 38.82%, 0.065) 35.8%, hsla(56.67deg, 9.09%, 38.82%, 0.054) 42.5%, hsla(56.67deg, 9.09%, 38.82%, 0.044) 49.3%, hsla(56.67deg, 9.09%, 38.82%, 0.034) 56.3%, hsla(56.67deg, 9.09%, 38.82%, 0.024) 63.4%, hsla(56.67deg, 9.09%, 38.82%, 0.016) 70.6%, hsla(56.67deg, 9.09%, 38.82%, 0.01) 77.9%, hsla(56.67deg, 9.09%, 38.82%, 0.004) 85.2%, hsla(56.67deg, 9.09%, 38.82%, 0.001) 92.6%, hsla(56.67deg, 9.09%, 38.82%, 0) 100%);
     background-blend-mode: multiply;
+}
+p {
+    max-width: 800px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.tile__description {
+    margin-top: 7px;
+}
+.fa-plus {
+    min-width: 25px;
+    font-size: 28px;
+    margin-bottom: 7px;
+    color: #fff;
+}
+@media (max-width: 767px) {
+    /* .responsive  {
+       height: 450px;
+    }
+    .responsive img {
+    width: 100%;
+    height: 100%; 
+    
+} */
 }
 </style>

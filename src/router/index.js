@@ -12,7 +12,9 @@ import NotFoundView from '../views/NotFound/NotFoundView.vue'
 import ActualitiesView from '../views/actualities/ActualitiesViews.vue'
 import ActualitiesShowView from '../views/actualities/ActualitiesShowView.vue'
 import ProjectsShowView from '../views/projects/ProjectsShowView.vue'
+import EquipesShowView from '../views/equipes/EquipesShowView.vue'
 import ProjectsView from '../views/projects/ProjectsView.vue'
+import EquipesView from '../views/equipes/EquipesView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,6 +33,11 @@ const router = createRouter({
       path: '/projects',
       name: 'projects',
       component: ProjectsView
+    },
+    {
+      path: '/equipes',
+      name: 'equipes',
+      component: EquipesView
     },
     {
       path: '/apropos',
@@ -76,6 +83,11 @@ const router = createRouter({
       path: '/actuality/:id',
       name: 'actuality.show',
       component: ActualitiesShowView
+    },
+    {
+      path: '/equipe/:id',
+      name: 'equipe.show',
+      component: EquipesShowView
     },
     {
       path: '/project/:id',

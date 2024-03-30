@@ -64,8 +64,8 @@ export default {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .col-margin{
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
   height: auto;
 }
 .container-fluidy {
@@ -75,7 +75,7 @@ export default {
 @media (max-width: 767px) {
 .masonry {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  row-gap: 10px !important;
+  
 }
 }
 

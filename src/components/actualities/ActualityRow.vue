@@ -64,8 +64,8 @@ export default {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .col-margin{
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 .container-fluidy {
   margin: 2% !important;
