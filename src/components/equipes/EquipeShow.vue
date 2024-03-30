@@ -213,11 +213,12 @@ a {
     height: 550px;
     /* Définissez ici la hauteur désirée pour votre bannière */
     overflow: hidden;
+    text-align: center;
 }
 
 .banner-image img {
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 100%;

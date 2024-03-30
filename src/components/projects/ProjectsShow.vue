@@ -275,7 +275,7 @@ a {
 
 .banner-image img {
   position: absolute;
-  top: 50%;
+  top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 100%;
