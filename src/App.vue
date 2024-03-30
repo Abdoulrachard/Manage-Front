@@ -3,7 +3,7 @@ import HeaderComponentVue from "@/components/layout/HeaderComponent.vue";
 import FooterComponentVue from "@/components/layout/FooterComponent.vue";
 
 import { onMounted, watch } from 'vue';
-import { useRouter } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
     const router = useRouter();
 
     watch(router.currentRoute, (to) => {
@@ -43,21 +43,39 @@ import { useRouter } from 'vue-router';
     onMounted(() => {
       document.title = getTitleFromRoute(router.currentRoute.value);
     });
-    const route = useRouter();
-
-  const isHomePage = () => {
-  return route.currentRoute.value.path === '/';
+    const appRoutes = [
+  '/', 
+  '/actualities', 
+  '/projects', 
+  '/equipes', 
+  '/apropos', 
+  '/emplois', 
+  '/contact', 
+  '/apropos/urbanisme', 
+  '/apropos/architecture', 
+  '/apropos/interieur', 
+  '/apropos/design', 
+  '/apropos/realisation', 
+  '/actuality/:id', 
+  '/equipe/:id', 
+  '/project/:id'
+]; 
+    const route = useRoute();
+    
+const isAppRoute = () => {
+    return appRoutes.includes(route.path);
 }
-
-
+const isNotFoundRoute = () => { 
+    return route.name === 'NotFound';
+}
 
 </script>
 
 <template>
   <div>
-    <HeaderComponentVue v-if="isHomePage"/>
+    <HeaderComponentVue v-if="isAppRoute() && !isNotFoundRoute()"/>
     <RouterView/>
-    <FooterComponentVue v-if="isHomePage"/>
+    <FooterComponentVue v-if="isAppRoute() && !isNotFoundRoute()"/>
   </div>
 </template>
 
