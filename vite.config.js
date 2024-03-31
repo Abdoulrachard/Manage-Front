@@ -13,9 +13,8 @@ export default defineConfig({
     }
   },
     server: {
-      port: 5173,
       cors: {
-        origin: 'http://localhost:5173', // Remplacez par l'origine de votre application Vue.js
+        origin: 'https://cche-ch.com', // Remplacez par l'origine de votre application Vue.js
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         allowedHeaders: ['Content-Type', 'Authorization'],
       },
