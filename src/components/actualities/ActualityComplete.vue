@@ -1,7 +1,8 @@
 <script setup>
 import ActualityCard from './ActualityCard.vue'
 import axios from 'axios';
-import constants from '../../constants';
+import constants from '@/constants';
+
 
 </script>
 

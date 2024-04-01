@@ -1,7 +1,7 @@
 <script setup>
 import SectionIntroComponent from '@/components/layout/SectionIntroComponent.vue'
 import ProjectView from '../projects/ProjectView.vue';
-import ActualityView from '../../views/actualities/ActualityView.vue';
+import ActualityView from '@/views/actualities/ActualityView.vue';
 
 </script>
 <template>

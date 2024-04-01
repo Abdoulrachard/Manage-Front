@@ -1,7 +1,7 @@
 <script setup>
 import axios from 'axios';
 
-import constants from '../../constants';
+import constants from '@/constants';
 </script>
 
 <template>
