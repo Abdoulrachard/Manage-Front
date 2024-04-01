@@ -11,6 +11,8 @@ node_modules
 .DS_Store
 coverage
 *.local
+/dist/
+.vscode/
 
 /cypress/videos/
 /cypress/screenshots/
