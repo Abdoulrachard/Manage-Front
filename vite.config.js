@@ -8,7 +8,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': './src' // Utilisation d'un chemin relatif pour l'alias
+      'vue': 'vue/dist/vue.esm-bundler.js'
     }
   },
   server: {
