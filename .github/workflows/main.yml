@@ -7,8 +7,10 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
-    - name: 🛠️ Build application
-      run: npm install && npm run build 
+    - name: 🛠️ Install Packages and Build Application
+      run: |
+        npm install 
+        npm run build
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
