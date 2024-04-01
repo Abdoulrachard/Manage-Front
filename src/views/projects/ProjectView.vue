@@ -1,6 +1,6 @@
 <script setup>
     import ProjectRow from '@/components/projects/ProjectRow.vue';
-    import ArrowLeft from '@/components/layout/Arrowleft.vue';
+    import ArrowLeft from '../../components/layout/ArrowLeft.vue';
 </script>
 
 <template>
