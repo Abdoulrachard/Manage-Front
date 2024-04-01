@@ -4,7 +4,7 @@
 </script>
 <template>
     <div class="container">
-        <img src="../assets/image/barner/something-lost.png" alt="404">
+        <img src="../assets/image/barner/something-lost.png" style="max-width: 100%; height: auto; margin-bottom: 30px;" alt="404">
         <p>Sorry, the page you are looking for could not be found.</p>
         <RouterLink to="/">Go back to homepage</RouterLink>
     </div>
@@ -16,6 +16,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-bottom: 80px;
 }
 
 h1 {
@@ -42,9 +43,5 @@ a {
 a:hover {
     background-color: #555;
 }
-img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 20px; 
-    }
+
 </style>
