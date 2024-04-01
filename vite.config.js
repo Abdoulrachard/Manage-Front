@@ -8,7 +8,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': new URL('./src', import.meta.url).pathname
+      '@': './src' // Utilisation d'un chemin relatif pour l'alias
     }
   },
   server: {
