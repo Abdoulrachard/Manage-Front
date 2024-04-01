@@ -12,7 +12,7 @@ node_modules
 coverage
 *.local
 /dist/
-.vscode/
+/.vscode/
 
 /cypress/videos/
 /cypress/screenshots/
