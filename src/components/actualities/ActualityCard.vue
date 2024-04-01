@@ -1,5 +1,6 @@
 <script setup>
-  import constants from '@/constants';
+import constants from '../../constants';
+
 </script>
 <template>
   <RouterLink
