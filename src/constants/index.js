@@ -1,9 +1,9 @@
 
 const constants = {
 
-    BASE_URL: 'https://back.cche-ch.com/api',
+    BASE_URL: 'https://api.cche-ch.com/api',
 
-    STORAGE_URL: 'https://back.cche-ch.com/storage',
+    STORAGE_URL: 'https://api.cche-ch.com/storage',
 
 }
 
