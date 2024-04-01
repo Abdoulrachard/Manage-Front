@@ -4,7 +4,7 @@
 </script>
 <template>
     <div class="container">
-        <img src="./src/assets/image/barner/something-lost.png" alt="404">
+        <img src="../assets/image/barner/something-lost.png" alt="404">
         <p>Sorry, the page you are looking for could not be found.</p>
         <RouterLink to="/">Go back to homepage</RouterLink>
     </div>
