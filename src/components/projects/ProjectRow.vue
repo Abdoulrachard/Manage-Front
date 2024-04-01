@@ -1,7 +1,8 @@
 <script setup>
 import ProjectCard from './ProjectCard.vue'
 import axios from 'axios';
-import constants from '@/constants';
+import constants from '../../constants';
+
 </script>
 
 <template>
