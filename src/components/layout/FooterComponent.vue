@@ -93,4 +93,7 @@ export default {
 .social{
   align-items: center;
 }
+ul{
+  padding-left: .8rem;
+}
 </style>

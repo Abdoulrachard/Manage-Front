@@ -31,7 +31,7 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <RouterLink class="nav-link" to="/actualities" >Actualités</RouterLink>
+                <RouterLink class="nav-link"  to="/actualities" >Actualités</RouterLink>
                 <RouterLink class="nav-link" to="/projects">Projets</RouterLink>
                 <RouterLink class="nav-link" to="/equipes">Équipe</RouterLink>
                 <RouterLink class="nav-link" to="/apropos">À propos</RouterLink>
