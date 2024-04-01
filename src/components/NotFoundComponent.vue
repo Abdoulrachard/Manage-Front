@@ -42,4 +42,9 @@ a {
 a:hover {
     background-color: #555;
 }
+img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px; 
+    }
 </style>
