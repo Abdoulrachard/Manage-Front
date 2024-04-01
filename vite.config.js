@@ -14,7 +14,7 @@ export default defineConfig({
   },
     server: {
       cors: {
-        origin: 'https://cche-ch.com', // Remplacez par l'origine de votre application Vue.js
+        origin: 'https://cche-ch.com',
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         allowedHeaders: ['Content-Type', 'Authorization'],
       },
