@@ -24,10 +24,6 @@ jobs:
         npm install
         npm run build
         
-    - name: 🗑️ Remove old files from server
-      run: |
-        lftp -e "rm -rf ./cche-ch.com/*" -u ${{ secrets.FTP_USERNAME }},"${{ secrets.FTP_PASSWORD }}" ${{ secrets.FTP_SERVER }}
-        
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
