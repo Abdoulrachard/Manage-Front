@@ -135,7 +135,7 @@ a {
     -webkit-text-decoration-skip: objects;
 }
 .embed-responsive__item{
-    height: auto;
+    height: 100%;
     max-width: 100%;
     position: absolute;
     top: 0;
