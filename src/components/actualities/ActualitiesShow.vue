@@ -36,7 +36,7 @@ import constants from '@/constants';
                         </div>
                     </div>
                     <div v-else-if="additionalImages.length > 1" class="additional-images row">
-                        <div v-for="(image, index) in additionalImages" :key="index" class="col-ms-6 col-md-6 ">
+                        <div v-for="(image, index) in additionalImages" :key="index" class="col-ms-6 col-md-6 ok">
                             <div class="block__item">
                                 <div class="responsive-object  embed-responsive-16by9">
                                     <img :src="`${constants.STORAGE_URL}/actualities/additional_images/${image.path}`"
@@ -89,8 +89,8 @@ export default {
 
 </script>
 <style scoped>
- .row{
-        margin-top: 15px;
+ .ok{
+        margin-top: 20px !important;
     }
 .container {
     padding-right: 30px;
