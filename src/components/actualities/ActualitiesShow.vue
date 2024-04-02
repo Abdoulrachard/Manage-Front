@@ -90,7 +90,7 @@ export default {
 </script>
 <style scoped>
  .row{
-        gap: 10px ;
+        margin-top: 15px;
     }
 .container {
     padding-right: 30px;
