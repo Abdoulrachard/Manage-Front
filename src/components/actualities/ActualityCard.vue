@@ -45,14 +45,14 @@ export default {
 .categories {
     margin-bottom: 7px;
     font-weight: 600;
-    margin-left:10px ;
+    /* margin-left:10px ; */
 }
 .title {
     margin-top: 0;
     margin-bottom: 14px;
     font-size: 1.2222222222rem;
     font-weight: bold;
-    margin-left:10px ;
+    /* margin-left:10px ; */
 
 }
 
@@ -62,7 +62,7 @@ export default {
     margin-bottom: 14px;
     font-size: .888888rem;
     font-weight: 500;
-    margin-left:10px ;
+    /* margin-left:10px ; */
     
 
 }
