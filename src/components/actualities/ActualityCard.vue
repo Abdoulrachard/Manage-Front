@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     truncateDescription(description) {
-      const maxHeight = 250;
+      const maxHeight = 25;
       const container = document.createElement('div');
       container.innerHTML = description;
 
