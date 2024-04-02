@@ -22,7 +22,7 @@ import constants from '@/constants';
 export default {
   data() {
     return {
-      max_actualities: 19,
+      max_actualities: 20,
       actualities: [],
       totalCols: 4,
       totalRows: 1
