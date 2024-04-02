@@ -6,13 +6,13 @@ import constants from '@/constants';
 <template>
   <RouterLink
     class="linkCard" :to="{ name: 'actuality.show', params: { id: data.id }}">
-    <div class="card border-0 rounded-0 bg-custom ">
+    <div class="card border-0 rounded-0 bg-custom">
       <img :src="`${constants.STORAGE_URL}/actualities/covers/${ data?.cover_path }`" class="card-img-top rounded-0 zoom-on-hover" :alt="data?.title" />
       <div class="card-body card-info">
-        <p class=" categories">{{ data?.category.name }}</p>
+        <p class="categories">{{ data?.category.name }}</p>
         <p class="date">{{ data?.created_at}}</p>
         <h4 class="card-title title">{{ data?.title }}</h4>
-        <p  class="card-text text" v-html=" data?.description "></p>
+        <p class="card-text text" ref="description" v-html="truncateDescription(data?.description)"></p>
       </div>
     </div>
   </RouterLink>
@@ -22,6 +22,25 @@ import constants from '@/constants';
 export default {
   props: {
     data: Object
+  },
+  mounted() {
+    this.truncateDescription();
+  },
+  methods: {
+    truncateDescription(description) {
+      const maxHeight = 250;
+      const container = document.createElement('div');
+      container.innerHTML = description;
+
+      if (container.clientHeight > maxHeight) {
+        let truncatedContent = description.substr(0, container.scrollHeight);
+        // Tronquer le contenu et ajouter des points de suspension
+        truncatedContent = truncatedContent.substr(0, truncatedContent.lastIndexOf(' ')) + '...';
+        return truncatedContent;
+      } else {
+        return description;
+      }
+    }
   }
 };
 </script>
