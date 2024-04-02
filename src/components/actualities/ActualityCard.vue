@@ -31,7 +31,7 @@ export default {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  -webkit-line-clamp: 5; /* Nombre de lignes maximal */
+  -webkit-line-clamp: 10; /* Nombre de lignes maximal */
 }
 .bg-custom {
   background-color: #f5f5f5 !important ;
