@@ -89,6 +89,9 @@ export default {
 
 </script>
 <style scoped>
+ .row{
+        gap: 10px ;
+    }
 .container {
     padding-right: 30px;
     padding-left: 30px;
