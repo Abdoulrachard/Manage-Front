@@ -91,4 +91,10 @@ export default {
 .card-img-top {
   transition: transform 0.3s ease !important;
 }
+@media (max-width: 767px) {
+  .line-clamp-3 {
+  -webkit-line-clamp: 5; /* Nombre de lignes maximal */
+}
+}
+
 </style>
