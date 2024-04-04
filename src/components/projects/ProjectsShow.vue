@@ -4,11 +4,15 @@ import axios from 'axios';
 import constants from '@/constants';
 
 import { RouterLink } from 'vue-router';
+import HeaderComponent from '../layout/HeaderComponent.vue';
+import FooterComponent from '../layout/FooterComponent.vue';
 </script>
 
 <template>
     <section>
-
+        <section>
+            <HeaderComponent/>
+        </section>
         <section>
             <div class="banner herobanner-embed herobanner-embed--full">
                 <div class="banner-image">
@@ -173,6 +177,9 @@ import { RouterLink } from 'vue-router';
                     <span class="text-bold ">Retour aux Projets</span>
                 </RouterLink>
             </div>
+        </section>
+        <section>
+            <FooterComponent/>
         </section>
     </section>
 </template>

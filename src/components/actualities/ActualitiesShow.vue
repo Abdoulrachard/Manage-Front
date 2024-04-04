@@ -2,11 +2,15 @@
 import axios from 'axios';
 
 import constants from '@/constants';
+import HeaderComponent from '../layout/HeaderComponent.vue';
+import FooterComponent from '../layout/FooterComponent.vue';
 </script>
 
 <template>
     <section>
-
+        <section>
+            <HeaderComponent/>
+        </section>
         <section>
             <div class="banner herobanner-embed herobanner-embed--full">
                 <div class="banner-image">
@@ -35,7 +39,8 @@ import constants from '@/constants';
                             </div>
                         </div>
                     </div>
-                    <div v-else-if="additionalImages.length > 1 && additionalImages.length === 3" class="additional-images row">
+                    <div v-else-if="additionalImages.length > 1 && additionalImages.length === 3"
+                        class="additional-images row">
                         <div v-for="(image, index) in additionalImages" :key="index" class="col-ms-6 col-md-4 ok">
                             <div class="block__item">
                                 <div class="responsive-object  embed-responsive-16by9">
@@ -68,6 +73,9 @@ import constants from '@/constants';
                     <span class="text-bold ">Retour àux Actualités</span>
                 </RouterLink>
             </div>
+        </section>
+        <section>
+            <FooterComponent/>
         </section>
     </section>
 </template>

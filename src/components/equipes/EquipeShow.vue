@@ -2,12 +2,16 @@
 import axios from 'axios';
 
 import constants from '@/constants';
+import HeaderComponent from '../layout/HeaderComponent.vue';
+import FooterComponent from '../layout/FooterComponent.vue';
 
 </script>
 
 <template>
     <section>
-
+        <section>
+            <HeaderComponent/>
+        </section>
         <section>
             <div class="banner herobanner-embed herobanner-embed--full">
                 <div class="banner-image">
@@ -91,6 +95,9 @@ import constants from '@/constants';
                     <span class="text-bold ">Retour aux Equipes</span>
                 </RouterLink>
             </div>
+        </section>
+        <section>
+            <FooterComponent/>
         </section>
     </section>
 </template>
