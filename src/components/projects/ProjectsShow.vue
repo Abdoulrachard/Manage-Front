@@ -154,6 +154,17 @@ import FooterComponent from '../layout/FooterComponent.vue';
                             </div>
                         </div>
                     </div>
+                    <div v-else-if="additionalImages.length > 1 && additionalImages.length === 3"
+                        class="additional-images row">
+                        <div v-for="(image, index) in additionalImages" :key="index" class="col-ms-6 col-md-4 ok">
+                            <div class="block__item">
+                                <div class="responsive-object  embed-responsive-16by9">
+                                    <img :src="`${constants.STORAGE_URL}/projects/additional_images/${image.path}`"
+                                        alt="Image supplémentaire" class="embed-responsive__item">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div v-else-if="additionalImages.length > 1" class="additional-images add row ">
                         <div v-for="(image, index) in additionalImages" :key="index" class="col-ms-6 col-md-6 ">
                             <div class="block__item">
@@ -219,6 +230,9 @@ export default {
     width: 100%;
     max-width: 100%;
 }
+.ok{
+        margin-top: 20px !important;
+    }
 .text-bold{
     font-weight: 600;
 }
