@@ -74,11 +74,10 @@ export default {
   margin: 2% !important;
   overflow: hidden;
 }
-@media (max-width: 767px) {
+@media (max-width: 389px) {
 .masonry {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  
-}
+  }
 }
 
 </style>
