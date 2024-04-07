@@ -64,6 +64,7 @@ export default {
 .masonry {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  transition:grid-template-columns .2s ease-in-out
 }
 .col-margin{
   padding-left: 4px;
