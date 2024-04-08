@@ -58,7 +58,8 @@ import { useRoute, useRouter } from 'vue-router';
   '/apropos/realisation', 
   '/actuality/:id', 
   '/equipe/:id', 
-  '/project/:id'
+  '/project/:id',
+  '/:catchAll(.*)'
 ]; 
     const route = useRoute();
     
