@@ -60,22 +60,31 @@ export default {
 
 <style scoped>
 .nav-link {
+  position: relative;
   color: #1d1d1d !important;
   padding-bottom: 0;
-  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  width: fit-content;
   margin-bottom: 3px;
   font-size: 2.2222222222rem;
   font-weight: 600;
   line-height: 1.2;
   text-decoration: none;
-  border-bottom-width: auto;
-  transition: border-bottom-color .3s ease-in;
 }
 
-.nav-link:hover {
-  border-bottom-color: #1d1d1d;
-  border-bottom-width: auto;
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  max-width: 100%; 
+  height: 2px;
+  background-color: #000; 
+  transition: width 0.5s cubic-bezier(.694,0,.335,1);
+}
 
+.nav-link:hover::after {
+  width: 100%; 
 }
 
 nav:hover {
