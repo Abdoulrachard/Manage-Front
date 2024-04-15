@@ -13,7 +13,7 @@ import FooterComponent from '../layout/FooterComponent.vue';
             <HeaderComponent/>
         </section>
         <section>
-            <div class="banner herobanner-embed herobanner-embed--full">
+            <div class="banner herobanner-embed herobanner-embed--full" v-if="additionalImages != 0">
                 <div class="banner-image">
                     <img :src="`${constants.STORAGE_URL}/equipes/additional_images/${additionalImages[0]?.path}`" :alt="equipes?.name">
                 </div>
