@@ -9,7 +9,7 @@ import constants from '@/constants';
 <template>
     
     <!-- <RouterLink :to="{ name: 'equipe.show', params: { id: data.id }}" class="linkCard"> -->
-    <RouterLink to="javascript::void(0)" class="linkCard">
+    <RouterLink to="" class="linkCard">
         <div class="card border-0 rounded-0 bg-custom ">
             <div class="responsive position-relative">
                 <img :src="`${constants.STORAGE_URL}/equipes/covers/${data?.cover}`"
