@@ -15,7 +15,7 @@ import constants from '@/constants';
                 <img :src="`${constants.STORAGE_URL}/equipes/covers/${data?.cover}`"
                     class="rounded-0 responsive zoom-on-hover" :alt="data?.name" />
                 <div class="title-overlay d-flex justify-content-between align-items-end">
-                    <div >
+                    <div>
                         <h5 v-if="data?.name !== null" class="tile__title line-clamp-2">{{ data?.name }}</h5>
                         <p class="tile__description">{{ data?.posted }}</p>
                     </div>
