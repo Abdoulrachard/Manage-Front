@@ -8,13 +8,14 @@ import constants from '@/constants';
 
 <template>
     
-    <RouterLink :to="{ name: 'equipe.show', params: { id: data.id }}" class="linkCard">
+    <!-- <RouterLink :to="{ name: 'equipe.show', params: { id: data.id }}" class="linkCard"> -->
+    <RouterLink  class="linkCard">
         <div class="card border-0 rounded-0 bg-custom ">
             <div class="responsive position-relative">
                 <img :src="`${constants.STORAGE_URL}/equipes/covers/${data?.cover}`"
                     class="rounded-0 responsive zoom-on-hover" :alt="data?.name" />
                 <div class="title-overlay d-flex justify-content-between align-items-end">
-                    <div>
+                    <div v-if="data?.name != null">
                         <h5 class="tile__title line-clamp-2">{{ data?.name }}</h5>
                         <p class="tile__description">{{ data?.posted }}</p>
                     </div>
@@ -26,6 +27,7 @@ import constants from '@/constants';
             </div>
         </div>
     </RouterLink>
+    <!-- </RouterLink> -->
     
 </template>
 

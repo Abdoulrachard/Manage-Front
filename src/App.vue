@@ -57,7 +57,7 @@ import { useRoute, useRouter } from 'vue-router';
   '/apropos/design', 
   '/apropos/realisation', 
   '/actuality/:id', 
-  '/equipe/:id', 
+  // '/equipe/:id', 
   '/project/:id',
   '/:catchAll(.*)'
 ]; 

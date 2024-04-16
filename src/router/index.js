@@ -12,7 +12,7 @@ import NotFoundView from '../views/NotFound/NotFoundView.vue'
 import ActualitiesView from '../views/actualities/ActualitiesViews.vue'
 import ActualitiesShowView from '../views/actualities/ActualitiesShowView.vue'
 import ProjectsShowView from '../views/projects/ProjectsShowView.vue'
-import EquipesShowView from '../views/equipes/EquipesShowView.vue'
+// import EquipesShowView from '../views/equipes/EquipesShowView.vue'
 import ProjectsView from '../views/projects/ProjectsView.vue'
 import EquipesView from '../views/equipes/EquipesView.vue'
 
@@ -84,11 +84,11 @@ const router = createRouter({
       name: 'actuality.show',
       component: ActualitiesShowView
     },
-    {
-      path: '/equipe/:id',
-      name: 'equipe.show',
-      component: EquipesShowView
-    },
+    // {
+    //   path: '/equipe/:id',
+    //   name: 'equipe.show',
+    //   component: EquipesShowView
+    // },
     {
       path: '/project/:id',
       name: 'project.show',
