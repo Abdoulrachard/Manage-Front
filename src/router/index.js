@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/Home/HomeView.vue'
 import AproposView from '../views/Apropos/AproposView.vue'
 import EmploiView from '../views/Emplois/EmploiView.vue'
-import ContactView from '../views/Contact/ContactView.vue'
+//import ContactView from '../views/Contact/ContactView.vue'
 import UrbanismeView from '@/views/Apropos/UrbanismeView.vue'
 import ArchitectureView from '@/views/Apropos/ArchitectureView.vue'
 import InterieurView from '@/views/Apropos/InterieurView.vue'
@@ -49,11 +49,11 @@ const router = createRouter({
       name: 'emplois',
       component: EmploiView
     },
-    {
+    /*{
       path: '/contact',
       name: 'contact',
       component: ContactView
-    },
+    },*/
     {
       path: '/apropos/urbanisme',
       name: 'urbanisme',
