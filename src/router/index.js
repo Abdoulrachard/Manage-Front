@@ -17,7 +17,7 @@ import ProjectsView from '../views/projects/ProjectsView.vue'
 import EquipesView from '../views/equipes/EquipesView.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory("/"),
   routes: [
     {
       path: '/',
