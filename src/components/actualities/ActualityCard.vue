@@ -1,7 +1,20 @@
 <script setup>
 import constants from '@/constants';
 
-
+// Fonction pour tronquer le texte
+const truncateText = (text, maxLength) => {
+  if (!text) return '';
+  
+  // Supprimer les balises HTML
+  const strippedText = text.replace(/<[^>]*>/g, '');
+  
+  // Tronquer le texte
+  if (strippedText.length > maxLength) {
+    return strippedText.substr(0, maxLength) + '...';
+  }
+  
+  return strippedText;
+}
 </script>
 <template>
   <RouterLink
@@ -12,7 +25,7 @@ import constants from '@/constants';
         <p class=" categories">{{ data?.category.name }}</p>
         <p class="date">{{ data?.created_at}}</p>
         <h4 class="card-title title">{{ data?.title }}</h4>
-        <p  class="card-text text line-clamp-3" v-html=" data?.description "></p>
+        <p  class="card-text text line-clamp-3" v-html="truncateText(data?.description, 100)"></p>
       </div>
     </div>
   </RouterLink>
@@ -31,7 +44,8 @@ export default {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  -webkit-line-clamp: 10; /* Nombre de lignes maximal */
+  -webkit-line-clamp: 3; /* Limite à 3 lignes */
+  text-overflow: ellipsis;
 }
 .bg-custom {
   background-color: #f5f5f5 !important ;
