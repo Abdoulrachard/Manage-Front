@@ -25,7 +25,7 @@ const truncateText = (text, maxLength) => {
         <p class=" categories">{{ data?.category.name }}</p>
         <p class="date">{{ data?.created_at}}</p>
         <h4 class="card-title title">{{ data?.title }}</h4>
-        <p  class="card-text text line-clamp-3" v-html="truncateText(data?.description, 100)"></p>
+        <p  class="card-text text line-clamp-3" v-html="truncateText(data?.description, 170)"></p>
       </div>
     </div>
   </RouterLink>
@@ -44,7 +44,7 @@ export default {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  -webkit-line-clamp: 3; /* Limite à 3 lignes */
+  -webkit-line-clamp: 5; /* Limite à 3 lignes */
   text-overflow: ellipsis;
 }
 .bg-custom {
