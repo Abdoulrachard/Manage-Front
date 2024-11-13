@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
+  base: '/',
   plugins: [
     vue(),
   ],
@@ -14,7 +15,7 @@ export default defineConfig({
   },
     server: {
       cors: {
-        origin: 'https://cche-ch.com',
+        origin: 'https://cche-ch.org',
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         allowedHeaders: ['Content-Type', 'Authorization'],
       },
